@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main" class="sort sort-down gap-1 bk-gray-5">
+        <div id="title" class="sort sort-down gap-1 width-90 bk-gray-4">
+            <h1 class="fc-white">TIC TAC TOE</h1>
+            <button id="start-game">NEW GAME</button> 
+        </div>
+        <div id="board" class="sort width-90 bk-gray-3">
+            <div id="boxes" class="box-90">
+                <div id="0" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="1" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="2" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="3" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="4" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="5" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="6" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="7" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+                <div id="8" class="box bk-gray-1 rad-13 box-shadow"><div class="box-display"><p class="letter-display"></p></div></div>
+            </div>
+        </div>
+        <div id="score" class="sort sort-down width-90 bk-gray-4">
+            <div class="sort sort-across gap-3">
+                <p class="fc-white">PLAYER: <span id="player-score">0</span></p>
+                <p class="fc-white">CPU: <span id="cpu-score">0</span></p>
+            </div>
+        </div>
+    </div>
+    <h1 id="final-status" class="abs-center border-white width-90 bk-gray-5 fc-white">IN PROGRESS</h1>   
+</body>
+</html>

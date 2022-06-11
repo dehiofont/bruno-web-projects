@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+}
+#main-container{
+    width:70%;
+    height: auto;
+    margin:auto;
+    padding:1em;
+    padding-bottom: 1.5em;
+    background-color: rgb(235, 235, 235);
+    border-radius: 2em;
+}
+#menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 187, 187);
+    padding: .7em 1em;
+}
+#new-game{
+    z-index: 5;
+}
+#letter-boxes{
+    width:100%;
+    border-radius: .25em;
+    height: 100%;
+}
+#definition-container > p{
+    text-align: center; 
+}
+#definition-container{
+    display: none;
+}
+#clue-container{
+    display: flex;
+    justify-content: center;
+    margin-top: .2em;
+}
+h1{
+    text-align: center;
+    margin: 0 0 0 0;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.container-sort-down{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    background-color: rgb(155, 155, 155);
+    border-radius: 2rem;
+    padding: .5em;
+}
+.container-sort-across{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgb(155, 155, 155);
+    border-radius: 2rem;
+    /* padding: .5em; */
+}
+#display-container{
+    height:20em;
+    width:20em;
+    background-color: gray;
+    border-radius: 2rem;
+}
+#incorrect-letters{
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.title-box{
+    background-color:gray;
+    border-radius: .25em;
+    padding: 0 1em;
+    color: white;
+}
+.letter-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 4em;
+    border-radius: 10%;
+    border:solid rgb(88, 88, 88) 4px;
+    text-transform: uppercase;
+    /* box-shadow: 5px 5px 3px rgb(4, 3, 43); */
+    background-color: white;
+}
+.correct-letter{
+    font-size: 3em;
+}
+#letter-container{
+    height: 5.5em;
+}
+.letter-button{
+    border-radius: 1rem;
+    padding: 1rem;
+    /* box-shadow: 5px 5px 3px rgb(43, 26, 3); */
+}
+
+#alphabet-selector-container{
+    width: 20em;
+    height: 20em;
+    gap: .2em;
+    border-radius: 2rem;
+}
+.container-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2em;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 90%;
+}
+.center-vert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.selection-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(141, 141, 141);
+    border-radius: .25em;
+    width: 2.7em;
+    height: 2.7em;
+}
+.letter-select-display{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(240, 240, 240);
+}
+.dl-main{
+    display:flex;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgb(58, 58, 58);
+    border-radius: 1em;
+    padding: .5em;
+}
+.dl-display{
+    width: 20em;
+    height: 20em;
+    background-color: rgb(87, 87, 87);
+    border-radius: 1em;
+    
+}
+.dl-input-and-title{
+    width: 20em;
+    height: 20em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 87, 87);
+    border-radius: 1em;
+    gap: 1em;
+}
+.dl-keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+    /* background-color: rgb(122, 122, 122); */
+
+}
+.letter-hover {
+    background-color: rgb(207, 207, 207);
+}
+.letter-hover > p{
+    color: black;
+}
+.letter-click{
+    background-color: rgb(33, 33, 33);
+}
+.letter-click > p{
+    color: rgb(255, 255, 255);
+}
+.bomb-image{
+    width:100%;
+}
+.explosion-image{
+    display: inline;
+    position: relative;
+    margin: auto;
+    width: 99%;
+    z-index: 2;
+}
+.word-container{
+    position: relative;
+    text-align: center;
+}
+.time-display{
+    display: inline;
+    position: absolute;
+    top: 3.6em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 2.7em;
+    color: white;
+}
+.img-holder{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:700px) {
+    body{
+        font-size: .95em;
+    }
+    #main-container{
+        width: 100%;
+        padding:0;
+        margin-top:.25em;
+        gap:0;
+    }
+    #difficulty-selector{
+        z-index: 6;
+    }
+    .container-sort-across{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5em;
+        border-radius: 1rem;
+    }
+    .container-sort-down{
+        border-radius: 1em;
+    }
+    .dl-main{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;        
+        gap: .25em;
+    }
+    .dl-input-and-title{
+        width:100%;
+        height: 12em;
+        gap: .25em;
+        align-items: center;
+        padding: 0;
+    }
+    .dl-display{
+        height: 10em;
+        width:100%;
+    }
+    .selection-box{
+        border-radius: .15em;
+        width: 2.6em;
+        height: 2.6em;
+    }
+    .letter-select-display{
+        font-size: 80%;
+    }
+    h1{
+        font-size: .8em;
+        text-shadow: 1px 1px black;
+    }
+    #menu-container > p{
+        font-size: .6em;
+        padding: .1em .1em;
+    }
+
+    .container-sort-down{
+        gap: .25em;
+    }
+    .title-box{
+        margin: 0;
+    }
+    .bomb-image{
+        height: 150%;
+        width: auto;        
+    }
+    #letter-container{
+        height: 4em;
+    }
+    #letter-boxes{
+        display: flex;
+        flex-direction: row;
+        gap: .1em;
+        width:100%;
+        border-radius: .25em;
+        height: 100%;
+    }
+    .letter-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.8em;
+        height: 2.8em;
+        border-radius: 10%;
+        text-transform: uppercase;
+    }
+    .correct-letter{
+        font-size: 1.5em;
+    }
+    .time-display{
+        display: inline;
+        position: absolute;
+        top: 2.35em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        font-size: 2.1em;
+        font-family: 'Orbitron', sans-serif;
+        color: white;
+    }
+    #menu-container{
+        flex-direction: row;
+        border-radius: .5em;
+        padding: .15em .3em;
+    }
+    #clue-container{
+        margin-bottom: .25em;
+    }
+}

@@ -1,0 +1,139 @@
+*
+{
+    /* margin:0; */
+}
+
+.main-board
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: .5fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+    /* margin : 0; */
+
+}
+nav
+{
+    text-align: center;
+    color: white;
+    background-color: rgb(168, 168, 168);
+
+    grid-column: 1 / span 3;
+    grid-row-start: 1;
+}
+.title
+{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: rgb(155, 155, 155);
+    text-align: center;
+
+}
+.bottom
+{
+    grid-column-start: 2;
+    grid-row-start: 10;
+    background-color: rgb(151, 151, 151);
+    text-align: center;
+}
+.controls
+{
+    grid-column-start: 1;
+    grid-row: 2 / span 9;
+    background-color: rgb(243, 243, 243);  
+}
+.score
+{
+    grid-column-start: 3;
+    grid-row: 2 / span 9;
+    background-color: rgb(223, 223, 223);  
+}
+
+.a
+{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    background-color: rgb(124, 124, 124);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.b
+{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+.c
+{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.d
+{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    background-color: rgb(131, 131, 131);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+.e
+{
+    grid-column-start: 2;
+    grid-row-start: 7;
+    background-color: rgb(122, 122, 122);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.f
+{
+    grid-column-start: 2;
+    grid-row-start: 8;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+.g
+{
+    grid-column-start: 2;
+    grid-row-start: 9;
+    background-color: rgb(128, 128, 128);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+.letters-selected span
+{
+    border: black solid 2px;
+    background-color: white;
+    padding: 10px;
+    margin: auto 10px;
+}
+.victory
+{
+    visibility: hidden;
+}
+
+footer
+{
+    text-align: center;
+    color: white;
+    background-color: rgb(122, 122, 122);
+
+    grid-column: 1 / span 3;
+    grid-row-start: 11;
+}
+
+

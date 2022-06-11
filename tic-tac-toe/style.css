@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-shadow: gray 1px 1px;
+}
+body{
+    height: 100%;
+}
+button{
+    padding: .25rem;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border-radius: .25rem;
+}
+button:active{
+    color: rgb(44, 44, 44);
+    background-color: white;
+}
+/* CONTAINERS */
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;  
+    width: 93%;
+    height: 93%; 
+}
+#title{
+    height: 15%;
+    border-radius: .5rem;
+}
+#score{
+    height: 5%;
+    border-radius: .5rem;
+}
+
+#board{
+    height: 75%;
+    border-radius: .75rem;
+}
+#boxes{
+    display:grid;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:.25rem;
+    max-width: 24rem;
+    max-height: 24rem;
+}
+#new-game{
+    padding: .25rem;
+}
+/* CLASSES */
+/* SORT AND ALIGNMENT */
+.sort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sort-across{
+    flex-direction: row;
+}
+.sort-down{
+    flex-direction: column;
+}
+.gap-1{
+    gap: .25rem;
+}
+.gap-2{
+    gap: .5rem;
+}
+.gap-3{
+    gap: 1rem;
+}
+.abs-center{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* COLOR */
+.bk-gray-1{
+    background: rgb(218, 217, 217);
+}
+.bk-gray-2{
+    background: rgb(170, 170, 170);
+}
+.bk-gray-3{
+    background: gray;
+}
+.bk-gray-4{
+    background: rgb(78, 78, 78);
+}
+.bk-gray-5{
+    background: rgb(43, 42, 42);
+}
+.fc-white{
+    color: white;
+}
+.box-shadow{
+    box-shadow: 3px 3px rgb(73, 73, 73);
+}
+/* SIZING */
+.box-90{
+    width: 90%;
+    height: 90%;
+}
+.width-90{
+    width:90%;
+}
+.border-white{
+    border: solid white 2px;
+}
+/* BORDER RADIUS */
+.rad-13{
+    border-radius: 13%;
+}
+/* BOXES */
+.box:hover{
+    background-color: white;
+}
+.box:active{
+    background-color: rgb(59, 59, 59);
+}
+.box-display{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.letter-display{
+    position: absolute;
+    font-size: 6em;
+}
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+    #boxes{
+        width: 22rem;
+        height: 22rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #boxes{
+        width: 18rem;
+        height: 18rem;
+    }
+}

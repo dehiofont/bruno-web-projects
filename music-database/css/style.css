@@ -1,0 +1,363 @@
+body
+{
+  text-align: center;
+  /* background-color: #1b263b; */
+  /* background: rgb(2,0,36); */
+  background: linear-gradient(90deg, #141414 0%, #2b2d2e 47%, #cdd4d4 100%);
+  transform:scale(.8);
+  margin-top: 28.5px;
+  margin-left:46.5px;
+
+
+}
+table, td, th
+{
+  border: 2px solid white;
+  text-align: left;
+  padding: 5px;
+  margin: 10px;
+  background-color: #e0e1dd;
+}
+th
+{
+  font-size: 23px;
+  color: white;
+  text-shadow: .5px .5px #415a77;
+  background-color: #415a77;
+}
+table
+{
+  margin:5% auto auto auto;
+  border-collapse: collapse;
+}
+h1
+{
+  margin:50px auto 0 auto;
+  color: #e0e1dd;
+  text-shadow: 2px 2px #415a77;
+  text-decoration: underline;
+  font-size: 3.5em;
+}
+h3
+{
+  margin:50px auto 0 auto;
+  color: #e0e1dd;
+  text-shadow: 2px 2px #415a77;
+}
+.guitar
+{
+
+
+  margin-left: 200px;
+  margin-right: 200px;
+  top: 11%;
+  width:20%;
+  height:20%;
+  transform: scaleX(-1);
+}
+.guitar2
+{
+  margin-right: 200px;
+  margin-left: 200px;
+  top: 11%;
+  width:20%;
+  height:20%;
+  
+}
+.finger
+{
+  position: relative;
+  left:100%
+}
+.productbox
+{
+  width: 1000px;
+  height: 2000px;
+  margin: 50px auto;
+  background-color: gray;
+  /* align-items: center;
+  justify-content: center; */
+  /* background-color: gray; */
+}
+
+.shirtbox
+{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: 30px auto;
+  z-index: -2;
+}
+.bandbox
+{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: 285px auto;
+  z-index: -1;
+  
+}
+.bandbox > img
+{
+  box-shadow: 0px 0px 12px 5px #141414;
+  z-index: -1;
+}
+.bandboxtank
+{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: 500px auto;
+}
+.sizebox
+{
+  position: relative;
+  left:0;
+  right:0;
+  margin: auto;
+  width:400px;
+}
+.sizebox > h1
+{
+  position:absolute;
+  left:300px;
+  top: 70px;
+  text-decoration: unset;
+  text-shadow: unset;
+  color: white;
+  background-color:#1d1f1f;
+  font-style: none;
+  padding: 20px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px 2px #cdd4d4;
+  margin-left:20px; 
+}
+.testing
+{
+  margin-top: 1200px
+}
+select
+{
+  height: 50px;
+  width: 185px;
+  font-size: 1.35rem;
+  margin: 10px auto;
+  font-weight: bold;
+  z-index: 7;
+}
+.tshirttitle
+{
+  display:inline-block;
+  text-decoration: unset;
+  color: white;
+  background-color: #1d1f1f;
+  border-radius: 100%;
+  padding: 40px;
+  margin-top:15px;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  box-shadow: 0px 0px 7px 5px #cdd4d4; 
+}
+.custinfo
+{
+  display: relative;
+  margin-left:auto;
+  background-color: #141414;
+  width: 300px; 
+  padding: 30px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 7px 5px rgb(58, 57, 57); 
+  z-index: 1;
+}
+.custinfo > label
+{
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  z-index:1;
+
+}
+.custinfo > input
+{
+  padding: 10px;
+  margin: 5px;
+}
+.centerbox
+{
+
+  position:absolute;
+  left:0;
+  right:0;
+  top:275px;
+  margin:auto;
+  width: 1550px;
+  z-index:2;
+
+  /* background-color: gray; */
+}
+.centerbox2
+{
+
+  position:absolute;
+  left:0;
+  right:0;
+  top:200px;
+  margin:auto;
+  width: 1900px;
+  z-index: -6;
+  /* background-color: gray; */
+}
+.centerbox3
+{
+
+  position:absolute;
+  left:0;
+  right:0;
+  top:675px;
+  margin:auto;
+  width: 1600px;
+  z-index: -6;
+  /* background-color: gray; */
+}
+.centerbox4
+{
+
+  position:absolute;
+  left:-500px;
+  right:0;
+  top:0px;
+  margin:auto;
+  margin-right: auto;
+  width: 1000px;
+  z-index: 4;
+  /* background-color: gray; */
+}
+#success
+{
+  display: relative;
+  margin-left:auto;
+  background-color: #141414;
+  width: 400px; 
+  padding: 30px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 7px 5px rgb(58, 57, 57); 
+  z-index: -4;
+  color: white;
+}
+#success > h1
+{
+  text-decoration: none;
+  margin: 5px;
+  margin-bottom: 40px; 
+}
+#success > p
+{
+  margin-left: 130px;
+  text-align:left;
+}
+#success > h2
+{
+  margin-left: 130px;
+  text-align: left;
+}
+.errorContainer
+{
+  display: relative;
+  margin-left:auto;
+  background-color: #a81f0d;
+  width: 400px; 
+  padding: 30px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 7px 5px rgb(58, 57, 57); 
+  z-index: -4;
+  color: white;
+}
+.errorContainer > h1
+{
+  margin: auto;
+  text-decoration: none;
+}
+.errorContainer > hr
+{
+  margin-top: 15px;
+  margin-bottom : 30px;
+}
+.errorContainer > p
+{
+  margin: 7.5px auto;
+}
+form
+{
+  z-index: 7;
+}
+
+nav > ul > li, nav > ul > li > a 
+{
+  display:inline-block;
+}
+nav 
+{
+  
+  margin-right: 2600px;
+  width: 575px;
+
+}
+nav > ul 
+{
+  background-color: #1d1f1f;
+  margin-right: 100px;
+  padding-right: 65px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px 5px #cdd4d4;  
+}
+nav > ul > li
+{
+  margin: 10px;
+  text-decoration: none;
+}
+nav > ul > li > a
+{
+  margin: 20px auto;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 500ms;
+  font-size: 30px;
+  color: white;
+  padding: 8px;
+}
+nav > ul > li > a.active
+{
+  background-color: #cdd4d4;
+  border-radius: 8px;
+  color: #1d1f1f;
+  width: auto;
+  height: auto;
+}
+nav > ul > li a:hover:not(.active)
+{
+  transform: scale(1.15);
+  top: 5px;
+
+}
+ .finger
+ {
+  position:absolute;
+  left:0;
+  right:0;
+  top:435px;
+  margin:auto;
+  width: 150px;
+  z-index: 4;
+ }
+
+ .gif
+ {
+   position: absolute;
+   margin-right: 1500px;
+   margin-top: 10px;
+    z-index: -5;
+ }
+
+
+
+

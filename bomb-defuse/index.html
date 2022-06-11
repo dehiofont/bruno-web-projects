@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Bomb Diffuse</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div id="main-container" class="container-sort-down">
+        <!-- TOP NAV MENU -->
+        <div class="container-sort-down">
+            <h1>DIFFUSE THE BOMB!</h1>
+            <div id="menu-container" class="container-sort-across">            
+                <p>SELECT DIFFICULTY</p>
+                <select name="difficulty-selector" id="difficulty-selector">
+                    <option value="easy">EASY</option>
+                    <option value="moderate">MODERATE</option>
+                    <option value="hard">HARD</option>
+                </select>
+                <button id="new-game">NEW GAME</button>
+            </div>
+        </div>        
+        <!-- HANGMAN DISPLAY AND LETTER INPUT -->
+        <div id="menu-display-input-container" class="dl-main">
+                <div class="dl-display">
+                    <div class="word-container"><p class="time-display" id="timer-continer">0:<span id="timer"></span></span></p></div>
+                    <div class="img-holder"><img src="bomb.png" class="bomb-image" alt="home made bomb with timer" id="display-img"></div>
+                </div>
+                <div class="dl-input-and-title">
+                    <div id="input-container" class="dl-keyboard"></div>
+                    <p class="title-box">CHANCES LEFT : <span id="player-attempts">0</span></p>
+                </div>
+        </div>
+        <!-- CORRECT LETTER GUESS DISPLAY -->
+        <div id="letter-container">
+            <div id="letter-boxes" class="container-sort-across"></div>           
+        </div>
+        
+        <div id="clue-container">
+            <button id="reveal-def">REVEAL DEFINITION</button>
+            <div id="definition-container"><p>DEFINITION : <span id="definition"></span></p></div>
+        </div>
+    </div>
+    
+</body>
+</html>
